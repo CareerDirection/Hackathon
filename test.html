@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Hackathon 20XX — 60 Min Challenge</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="test.js" defer></script>
+</head>
+<body>
+
+  <!-- Camera / Proctor overlay -->
+  <div id="proctorOverlay" class="proctor-overlay hidden">
+    <div id="overlayCandidate" class="overlay-info"></div>
+    <video id="cameraFeed" autoplay playsinline muted></video>
+    <div class="overlay-info">
+      <span id="overlayTime"></span> | <span id="overlayWarnings"></span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="logo-wrap">
+      <img src="logo.png" alt="Career Direction Logo" class="logo" />
+    </div>
+
+    <h1>Global Hackathon 20XX — 60 Min Challenge</h1>
+    <p class="subtitle">30 Questions | 100 Marks (normalized from 105)</p>
+
+    <div id="warningBanner" class="warning-banner hidden"></div>
+
+    <p id="examNameLine" class="exam-summary"></p>
+    <p id="examStatusLine" class="exam-summary small"></p>
+
+    <div class="top-bar">
+      <div id="timer">Time Left: 60:00</div>
+      <div id="userInfoDisplay"></div>
+    </div>
+
+    <p class="note">
+      Questions are split into 3 sets of 10 and shuffled for every attempt.
+      Once you move to the next set, you cannot go back.
+      Camera, mic, tab-switches and other actions are monitored for security.
+    </p>
+
+    <div id="setInfo" class="set-info"></div>
+
+    <form id="quizForm">
+      <div id="questionsContainer"></div>
+
+      <div class="submit-wrap">
+        <button type="button" id="nextSetBtn">Next Set</button>
+        <button type="button" id="submitBtn" class="hidden">Submit Hackathon</button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="footer">
+    © Career Direction — Global Hackathon Platform
+  </footer>
+</body>
+</html>
