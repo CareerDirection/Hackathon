@@ -1,0 +1,456 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background: #f4f6fb;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 24px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  padding: 26px 24px 32px;
+  min-height: calc(100vh - 110px);
+}
+
+.logo-wrap {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo-wrap.left {
+  text-align: left;
+}
+
+.logo {
+  width: 230px;
+  height: auto;
+}
+
+.logo.small {
+  width: 200px;
+}
+
+h1 {
+  text-align: center;
+  margin: 8px 0 4px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.exam-title-left {
+  text-align: left;
+  margin: 6px 0 2px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #555;
+  font-size: 15px;
+}
+
+.subtitle-left {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #555;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Instructions / Home Page */
+.instruction-box {
+  background: #eef6ff;
+  border-radius: 10px;
+  border: 1px solid #c7ddff;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+}
+
+.instruction-heading {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.instruction-box ul {
+  margin: 0 0 4px 18px;
+  padding: 0;
+  font-size: 14px;
+}
+
+.all-the-best {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.user-form {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.field {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 11px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+}
+
+/* Stream + Start button in one row */
+.field-row-last {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.field-stream {
+  flex: 1 1 auto;
+}
+
+.field-button {
+  flex: 0 0 auto;
+}
+
+.primary-btn {
+  padding: 11px 22px;
+  border-radius: 7px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  padding: 9px 16px;
+  border-radius: 7px;
+  border: none;
+  background: #6b7280;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.primary-btn:disabled,
+.secondary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Admin reset */
+.admin-box {
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+
+.admin-box h3 {
+  margin: 0 0 4px;
+}
+
+.admin-inner {
+  margin-top: 8px;
+}
+
+.admin-inner input {
+  width: 60%;
+  max-width: 320px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  margin-right: 6px;
+}
+
+.admin-note {
+  margin-top: 4px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Lock message */
+.lock-message {
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fef3c7;
+  border: 1px solid #facc15;
+  color: #92400e;
+  font-size: 14px;
+}
+
+/* TEST PAGE */
+.exam-top-row {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  margin-bottom: 10px;
+}
+
+.exam-top-left {
+  flex: 2;
+}
+
+.exam-top-right {
+  flex: 1.1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.exam-summary {
+  margin: 2px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.exam-summary.small {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.note {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 6px 0;
+}
+
+/* Camera panel right side */
+.proctor-panel {
+  width: 100%;
+  max-width: 320px;
+  background: rgba(15, 23, 42, 0.96);
+  border-radius: 14px;
+  color: #e5e7eb;
+  padding: 8px 10px 10px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(148, 163, 184, 0.9);
+  text-align: center;
+}
+
+.overlay-title {
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+#cameraFeed {
+  width: 100%;
+  height: 200px;
+  background: #000;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 4px;
+}
+
+.overlay-footer {
+  font-size: 13px;
+}
+
+/* Warning banner */
+.warning-banner {
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Time + Email row */
+.exam-info-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+#timer {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+#setInfo {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Scrollable questions only */
+.questions-scroll-wrapper {
+  margin-top: 6px;
+  max-height: calc(100vh - 330px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+#questionsContainer {
+  margin-top: 4px;
+}
+
+/* Questions */
+.question-card {
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 12px 12px;
+  margin-bottom: 10px;
+  background: #f9fafb;
+}
+
+.question-header {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.question-text {
+  margin: 4px 0 8px;
+  white-space: pre-wrap;
+  font-size: 15px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.option input {
+  margin-right: 8px;
+}
+
+.option label {
+  font-size: 14px;
+}
+
+/* Submit row */
+.submit-wrap {
+  margin-top: 14px;
+  text-align: right;
+}
+
+/* RESULT PAGE */
+.result-title {
+  text-align: center;
+  margin: 8px 0 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.result-summary {
+  text-align: center;
+  margin: 3px 0;
+  color: #111827;
+}
+
+.result-summary.big {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.result-summary.big-sub {
+  font-size: 18px;
+}
+
+.violation-summary {
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 14px auto 18px;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+  font-size: 15px;
+  max-width: 880px;
+}
+
+/* Badge box */
+.badge-area {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.badge-box {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 8px;
+  max-width: 880px;
+  margin: 0 auto 6px;
+}
+
+.badge-img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+.badge-label {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Score + remark */
+#scoreText {
+  margin: 20px 0 4px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #16a34a;
+  text-align: center;
+}
+
+.remark {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Screenshot / email note */
+.post-note {
+  margin-top: 18px;
+  font-size: 16px;
+  text-align: center;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 4px;
+  font-size: 13px;
+  color: #6b7280;
+}
