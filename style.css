@@ -1,0 +1,363 @@
+/* Global layout */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background: #f4f6fb;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-size: 16px;
+}
+
+body.with-overlay {
+  padding-top: 0;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 28px 26px 34px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  min-height: calc(100vh - 130px);
+}
+
+.logo-wrap {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.logo {
+  width: 230px;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 8px 0 4px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #555;
+  font-size: 15px;
+}
+
+/* Exam + result summary lines */
+.exam-summary,
+.result-summary {
+  text-align: center;
+  margin: 3px 0 4px;
+  color: #374151;
+  font-size: 15px;
+}
+
+.result-summary.small,
+.exam-summary.small {
+  font-size: 14px;
+}
+
+/* Result title */
+.result-title {
+  text-align: center;
+  margin: 10px 0 8px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Proctor overlay */
+.proctor-overlay {
+  position: fixed;
+  top: 18px;
+  right: 16px;
+  width: 320px;
+  padding: 10px 10px 12px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.9);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.5);
+  z-index: 9999;
+  border: 1px solid rgba(148, 163, 184, 0.9);
+  color: #e5e7eb;
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+
+.proctor-overlay .overlay-info {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+#cameraFeed {
+  width: 100%;
+  height: 210px;
+  background: #000;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 4px 0 6px;
+}
+
+/* Warning banner */
+.warning-banner {
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 12px;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Lock message */
+.lock-message {
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 12px;
+  background: #fef3c7;
+  border: 1px solid #facc15;
+  color: #92400e;
+  font-size: 14px;
+}
+
+/* Start section */
+.info {
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.field {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.field input {
+  width: 100%;
+  padding: 9px 11px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+button {
+  padding: 10px 18px;
+  border-radius: 5px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: #6b7280;
+}
+
+/* Instructions box */
+.instruction-box {
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  margin-bottom: 16px;
+}
+
+.instruction-box h3 {
+  margin: 0 0 8px;
+}
+
+.instruction-box ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* All the Best message */
+.all-the-best {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin: 12px 0 20px;
+}
+
+/* Quiz section */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#timer {
+  color: #b91c1c;
+}
+
+#userInfoDisplay {
+  font-size: 14px;
+  color: #374151;
+}
+
+.note {
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.set-info {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Questions */
+#questionsContainer {
+  margin-top: 10px;
+}
+
+.question-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px 12px;
+  margin-bottom: 12px;
+  background: #f9fafb;
+}
+
+.question-header {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.question-text {
+  margin: 4px 0 8px;
+  white-space: pre-wrap;
+  font-size: 15px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.option input {
+  margin-right: 8px;
+}
+
+.option label {
+  font-size: 14px;
+}
+
+.submit-wrap {
+  margin-top: 18px;
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Result section */
+#scoreText {
+  margin: 18px 0 6px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+}
+
+.remark {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Violation summary block */
+.violation-summary {
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 10px auto 14px;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+  font-size: 14px;
+  max-width: 720px;
+}
+
+/* Badge area */
+.badge-area {
+  margin-top: 18px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.badge-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 8px auto;
+  border-radius: 6px;
+}
+
+.badge-label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Admin box */
+.admin-box {
+  margin-top: 14px;
+  text-align: left;
+}
+
+.admin-inner {
+  margin-top: 8px;
+}
+
+.admin-inner input {
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+/* Post-result note */
+.post-note {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+  padding: 10px 0 16px;
+}
+
+/* Basic anti-cheat */
+body, input, button {
+  -webkit-touch-callout: none;
+}
