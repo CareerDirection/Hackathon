@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Hackathon 20XX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ========== HOME PAGE (PAGE 1) ========== -->
+<section id="loginSection" class="pageSection active">
+
+  <div class="pageContainer">
+    <img src="logo.png" class="logoImage" alt="Career Direction Logo">
+
+    <h1>Global Hackathon 20XX — 60 Min Challenge</h1>
+    <h3>30 Questions | 100 Marks (Today's Participation 105+)</h3>
+
+    <div class="panel instructionsPanel">
+      <p>📌 30 Questions | 60 Min | Camera &amp; Mic Required</p>
+      <p>📌 Negative marking: –1 Wrong, –1 per 3 Unanswered</p>
+      <p>📌 5 Violations → Auto Submit</p>
+      <p>📌 Test cannot be resumed once submitted.</p>
+      <p class="allTheBest">✨ All The Best!! 😊 ✨</p>
+    </div>
+
+    <div class="panel formPanel">
+      <div class="formRow">
+        <input type="text" id="fullName" placeholder="Enter Full Name">
+      </div>
+      <div class="formRow">
+        <input type="email" id="email" placeholder="Enter Email ID">
+      </div>
+      <div class="formRow">
+        <input type="text" id="college" placeholder="Enter College Name">
+      </div>
+      <div class="formRow formRowInline">
+        <input type="text" id="stream" placeholder="Enter Stream">
+        <button id="startBtn">Start Hackathon</button>
+      </div>
+    </div>
+
+    <div class="panel adminPanel">
+      <h4>Admin Reset (20-Day Attempt Lock)</h4>
+      <div class="formRow formRowInlineSingle">
+        <input type="password" id="resetCode" placeholder="Enter Reset Code">
+        <button id="adminResetBtn">Reset Lock</button>
+      </div>
+      <p class="adminNote">
+        ⚠ Only for admin to unlock the 20-day lock period.
+      </p>
+    </div>
+
+    <footer>© Career Direction — Global Hackathon Platform</footer>
+  </div>
+
+</section>
+
+
+
+<!-- ========== TEST PAGE (PAGE 2) ========== -->
+<section id="examSection" class="pageSection hidden">
+
+  <div class="pageContainer">
+
+    <img src="logo.png" class="logoImage" alt="Career Direction Logo">
+
+    <div class="panel titlePanel">
+      <h2>Global Hackathon 20XX</h2>
+    </div>
+
+    <div class="examHeader">
+      <div class="leftInfo">
+        <div class="infoRow">
+          <span class="label">Name:</span>
+          <span class="value" id="studentName">-</span>
+        </div>
+        <div class="infoRow">
+          <span class="label">Email:</span>
+          <span class="value" id="studentEmail">-</span>
+        </div>
+        <div class="infoRow">
+          <span class="label">Time Left:</span>
+          <span class="value"><span id="timer">60:00</span></span>
+        </div>
+        <div class="infoRow">
+          <span class="label">Warnings:</span>
+          <span class="value"><span id="warningCount">0</span> / 5</span>
+        </div>
+        <div class="infoRow messageRow">
+          <span class="label">Message:</span>
+          <span class="value">3 Sets — Total 30 Questions</span>
+        </div>
+      </div>
+
+      <div class="cameraBox">
+        <video id="cameraFeed" autoplay playsinline></video>
+      </div>
+    </div>
+
+    <div class="panel questionsPanel">
+      <p class="questionInstruction">
+        Read each question carefully and choose the best option. Once submitted, the test cannot be resumed.
+      </p>
+      <div id="questionsBox"></div>
+      <button id="nextSetBtn" class="hidden">Next Page →</button>
+    </div>
+
+    <footer>© Career Direction — Global Hackathon Platform</footer>
+
+  </div>
+
+</section>
+
+
+
+<!-- ========== RESULT PAGE (PAGE 3) ========== -->
+<section id="resultSection" class="pageSection hidden">
+
+  <div class="pageContainer">
+
+    <img src="logo.png" class="logoImage" alt="Career Direction Logo">
+
+    <h1>Global Hackathon Result</h1>
+
+    <pre id="resultStudent" class="resultStudentText"></pre>
+
+    <div class="panel resultMainPanel">
+      <div id="resultBadgeBox" class="resultBadgeBox">
+        <!-- Badge.png or violation message injected by JS -->
+      </div>
+
+      <h2 id="finalScore" class="finalScore"></h2>
+      <p id="resultMessage" class="resultMessage"></p>
+
+      <p class="emailNotice">
+        😊 Take a screenshot of this page and send an email to<br>
+        <a href="mailto:support@careerdirection.co.in">
+          📩 support@careerdirection.co.in
+        </a><br>
+        to claim your Hackathon Certification and Internship Opportunity.<br>
+        Wait time is up to 48 working hours.
+      </p>
+    </div>
+
+    <footer>© Career Direction — Global Hackathon Platform</footer>
+
+  </div>
+
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
