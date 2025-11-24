@@ -1,0 +1,343 @@
+/* ====== Global Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+body {
+  background: #ffffff;
+  color: #000;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.pageSection {
+  width: 100%;
+}
+
+.pageContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 10px 40px;
+}
+
+/* ====== Logo Styling ====== */
+.logoImage {
+  width: 260px;
+  margin-bottom: 10px;
+}
+
+/* ====== Headings ====== */
+h1 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* ====== Panels / Boxes ====== */
+.panel {
+  width: 100%;
+  max-width: 900px;
+  margin: 15px auto;
+  border: 2px solid #000;
+  border-radius: 6px;
+  padding: 15px 18px;
+  text-align: left;
+  background: #f8f9fb;
+}
+
+.instructionsPanel {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.allTheBest {
+  font-size: 20px;
+  color: #117a00;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+/* ====== Form Panel (Home) ====== */
+.formPanel {
+  background: #ffffff;
+}
+
+.formRow {
+  margin-bottom: 12px;
+}
+
+.formRow input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #444;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.formRowInline {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.formRowInline input {
+  flex: 1;
+}
+
+.formRowInline button {
+  width: auto;
+  padding: 12px 20px;
+}
+
+/* Inline row for admin reset */
+.formRowInlineSingle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.formRowInlineSingle input {
+  flex: 1;
+}
+
+/* ===== Buttons ===== */
+button {
+  background: #0A6CF1;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  margin-top: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button:hover {
+  background: #044fad;
+}
+
+/* ===== Admin Box ===== */
+.adminPanel {
+  background: #fffef5;
+}
+
+.adminPanel h4 {
+  margin-bottom: 10px;
+}
+
+.adminNote {
+  font-size: 13px;
+  color: #c30000;
+  margin-top: 8px;
+}
+
+/* ===== Title Panel (Exam page) ===== */
+.titlePanel {
+  text-align: center;
+  background: #f0f3ff;
+}
+
+/* ====== Exam Header Layout ====== */
+.examHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 15px auto 10px;
+  max-width: 900px;
+}
+
+.leftInfo {
+  text-align: left;
+  max-width: 55%;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.infoRow {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.infoRow .label {
+  width: 90px;
+}
+
+.infoRow .value {
+  flex: 1;
+}
+
+.messageRow .value {
+  font-style: italic;
+}
+
+/* ===== Camera Box ===== */
+.cameraBox {
+  width: 320px;
+  height: 230px;
+  border: 3px solid #000;
+  background: #000;
+}
+
+#cameraFeed {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Questions Area ===== */
+.questionsPanel {
+  background: #ffffff;
+}
+
+.questionInstruction {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#questionsBox {
+  max-height: 430px;
+  overflow-y: auto;
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.questionBlock {
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.optionRow {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.optionRow input[type="radio"] {
+  transform: scale(1.1);
+}
+
+.optionRow label {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Next Page / Submit Button */
+#nextSetBtn {
+  display: block;
+  width: 180px;
+  margin: 12px 0 0 auto;
+}
+
+/* ===== Result Page ===== */
+.resultStudentText {
+  white-space: pre-wrap;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px auto 20px;
+  max-width: 900px;
+  text-align: left;
+}
+
+.resultMainPanel {
+  text-align: center;
+  background: #ffffff;
+}
+
+.resultBadgeBox {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 15px;
+}
+
+.resultBadgeBox img {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.finalScore {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.resultMessage {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Violation styles */
+.violationTitle {
+  color: #b20000;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.violationList {
+  margin-left: 18px;
+  margin-bottom: 10px;
+}
+
+.violationList li {
+  font-size: 15px;
+}
+
+.violationNote {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* Email notice */
+.emailNotice {
+  width: 95%;
+  max-width: 700px;
+  margin: 20px auto 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ===== Section Visibility ===== */
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
